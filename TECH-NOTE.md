@@ -68,6 +68,6 @@ Each landing page is stored as a **Prismic custom type** with the following fiel
 
 ## 5. Sample Slug Preview
 
-![Landing Page 1](/sample-preview/landingpage1.jpg)
-![Landing Page 2](/sample-preview/landingpage2.jpg)
-![Landing Page 3](/sample-preview/landingpage3.jpg)
+![Landing Page 1](/public/assets/sample-preview/landingpage1.png)
+![Landing Page 2](/public/assets/sample-preview/landingpage2.png)
+![Landing Page 3](/public/assets/sample-preview/landingpage3.png)
