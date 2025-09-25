@@ -63,3 +63,11 @@ Each landing page is stored as a **Prismic custom type** with the following fiel
   <url><loc>https://1daypaid.vercel.app/creative-portfolio</loc></url>
 </urlset>
 ```
+
+---
+
+## 5. Sample Slug Preview
+
+![Landing Page 1](/sample-preview/landingpage1.jpg)
+![Landing Page 2](/sample-preview/landingpage2.jpg)
+![Landing Page 3](/sample-preview/landingpage3.jpg)
