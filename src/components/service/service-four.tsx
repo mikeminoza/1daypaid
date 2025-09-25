@@ -2,9 +2,16 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FirstBracket, FirstBracketTwo, RightArrow, SvgBg } from "../svg";
-import icon from '@/assets/img/home-03/service/sv-icon-1.png';
+import icon from "@/assets/img/home-03/service/sv-icon-1.png";
 
-const service_data = [
+type ServiceItem = {
+  id: number;
+  title: string;
+  desc: string;
+  category: string[];
+};
+
+const service_data: ServiceItem[] = [
   {
     id: 1,
     title: "AI Image Generation",
@@ -24,8 +31,8 @@ const service_data = [
     category: ["Customizable", "Branding", "No-Code"],
   },
 ];
+
 export default function ServiceFour() {
-  
   return (
     <div className="tp-service-3-area pt-130 pb-130">
       <div className="container">
@@ -33,7 +40,7 @@ export default function ServiceFour() {
           <div className="col-xl-9">
             <div className="tp-service-3-title-box mb-60 p-relative">
               <div className="tp-service-3-icon">
-                <Image src={icon} alt="icon" />
+                <Image src={icon} alt="Service icon" width={60} height={60} />
               </div>
               <span className="tp-section-subtitle-2 tp_fade_bottom">
                 <span>
@@ -65,7 +72,7 @@ export default function ServiceFour() {
               </div>
               <div className="col-xl-7 col-lg-7">
                 <div className="tp-service-3-content">
-                  <p dangerouslySetInnerHTML={{ __html: item.desc }}></p>
+                  <p>{item.desc}</p>
                   <div className="tp-service-3-category">
                     {item.category.map((c, i) => (
                       <span key={i}>{c}</span>
@@ -75,10 +82,7 @@ export default function ServiceFour() {
               </div>
               <div className="col-xl-2 col-lg-2">
                 <div className="tp-service-3-btn-box text-start text-md-end">
-                  <Link
-                    className="tp-btn-zikzak-sm p-relative"
-                    href="/service"
-                  >
+                  <Link className="tp-btn-zikzak-sm p-relative" href="/service">
                     <span className="zikzak-content">
                       See <br /> Details
                       <RightArrow clr="currentColor" />
@@ -94,8 +98,5 @@ export default function ServiceFour() {
         ))}
       </div>
     </div>
-  );
-}
->
   );
 }

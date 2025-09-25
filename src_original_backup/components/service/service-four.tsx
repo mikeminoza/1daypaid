@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FirstBracket, FirstBracketTwo, RightArrow, SvgBg } from "../svg";
-import icon from '@/assets/img/home-03/service/sv-icon-1.png';
+import icon from "@/assets/img/home-03/service/sv-icon-1.png";
 
 const service_data = [
   {
@@ -25,7 +25,6 @@ const service_data = [
   },
 ];
 export default function ServiceFour() {
-  
   return (
     <div className="tp-service-3-area pt-130 pb-130">
       <div className="container">
@@ -75,10 +74,7 @@ export default function ServiceFour() {
               </div>
               <div className="col-xl-2 col-lg-2">
                 <div className="tp-service-3-btn-box text-start text-md-end">
-                  <Link
-                    className="tp-btn-zikzak-sm p-relative"
-                    href="/service"
-                  >
+                  <Link className="tp-btn-zikzak-sm p-relative" href="/service">
                     <span className="zikzak-content">
                       See <br /> Details
                       <RightArrow clr="currentColor" />

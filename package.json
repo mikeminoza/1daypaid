@@ -6,11 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "slicemachine": "start-slicemachine"
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
     "@hookform/resolvers": "^3.4.2",
+    "@prismicio/client": "^7.20.1",
+    "@prismicio/next": "^2.0.1",
+    "@prismicio/react": "^3.2.1",
     "@types/react-modal-video": "^1.2.3",
     "bootstrap": "^5.3.3",
     "gsap": "^3.12.5",
@@ -32,12 +36,14 @@
     "react-slick": "^0.30.2",
     "react-use": "^17.5.0",
     "sass": "^1.75.0",
+    "sharp": "^0.34.4",
     "slick-carousel": "^1.8.1",
     "swiper": "^11.1.1",
     "three": "^0.164.1",
     "yup": "^1.4.0"
   },
   "devDependencies": {
+    "@slicemachine/adapter-next": "^0.3.84",
     "@types/imagesloaded": "^4.1.6",
     "@types/isotope-layout": "^3.0.13",
     "@types/jquery": "^3.5.29",
@@ -49,6 +55,7 @@
     "@types/three": "^0.164.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
+    "slice-machine-ui": "^2.18.2",
     "typescript": "^5"
   }
 }

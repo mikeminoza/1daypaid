@@ -23,6 +23,7 @@ import { textInvert } from "@/utils/text-invert";
 import { fadeAnimation, revelAnimationOne } from "@/utils/title-animation";
 import { projectThreeAnimation } from "@/utils/project-anim";
 import { ctaAnimation } from "@/utils/cta-anim";
+import HeaderTwo from "@/layouts/headers/header-two";
 
 const HomeAirtableMain = () => {
   useScrollSmooth();
@@ -46,15 +47,14 @@ const HomeAirtableMain = () => {
 
   return (
     <Wrapper>
-
       {/* header area start */}
-      <HeaderFive />
+      {/* <HeaderFive /> */}
+      <HeaderTwo />
       {/* header area end */}
 
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-
             {/* hero area start */}
             <HeroBannerFour />
             {/* hero area end */}
@@ -70,7 +70,6 @@ const HomeAirtableMain = () => {
             {/* brand area start */}
             <BrandThree />
             {/* brand area end */}
-
 
             {/* project area start */}
             <ProjectFour />
@@ -91,7 +90,6 @@ const HomeAirtableMain = () => {
             {/* contact area start */}
             <ContactOne />
             {/* contact area end */}
-
           </main>
 
           {/* footer area */}
